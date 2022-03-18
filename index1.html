@@ -9,13 +9,48 @@
         .home{
             text-align: right;
         }
+        first#home a {
+  background-image: linear-gradient(
+    to right,
+    #54b3d6,
+    #54b3d6 50%,
+    #000 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+first#home a:before{
+  content: '';
+  background: #54b3d6;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+first#home a:hover {
+ background-position: 0;
+}
+first#home a:hover::before{
+  width: 100%;
+}
     </style>
 </head>
 <body>
     <h1>About Us</h1>
     <h3>I am Divyansh Mathur, a 8th class guy who has a keen interest in programming and like to help more and more people through that. I have designed this website specially for students who like to do smart work instead of hard work.
    Hope this will help all of you!</h3>
-    <div class="home">
+    <div class="home" id="first">
         <font size=4 color=yellow><a href="index.html">Home Page</a></font>
     </div>
 </body>
