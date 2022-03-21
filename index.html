@@ -164,7 +164,7 @@ text-align: center;
 }
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
-  .topnav a:not(:last-child) {display: none;}
+  .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
     display: block;
@@ -191,7 +191,7 @@ text-align: center;
     <div class="progress-bar">
 <button class="back-to-top hidden">
   <svg xmlns="http://www.w3.org/2000/svg" class="back-to-top-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11l5-5m0 0l5 5m-5-5v12" />
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11l5-5m0 0l5 5m-5-5v12">
   </svg>
 </button>
 </div>
@@ -199,13 +199,13 @@ text-align: center;
    <a class="active" href="https://divcoder7.github.io/"><i class="fa fa-fw fa-home"></i> Home</a>
         <a href="https://www.youtube.com/channel/UCgmHRP1-7BR5pLsJYVONdEQ"><i class="fa fa-fw fa-video"></i> Videos</a>
         <a class="a2a_dd" href="https://www.addtoany.com/share"><i class="fa-solid fa-share-from-square"></i> Share</a>
-        <script async src="https://static.addtoany.com/menu/page.js"></script>
         <a href="index2.html"><i class="fa fa-fw fa-envelope"></i> Contact Us</a>
         <a href="index1.html"><i class="fa fa-fw fa-address-card"></i> About Us</a> 
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
-</div>
+    </div>
+    <script async src="https://static.addtoany.com/menu/page.js"></script>
     <script>
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 function myFunction() {
@@ -217,7 +217,7 @@ function myFunction() {
   }
 }
 </script>
-    <hr align=center width=100% size=5 color="F2ECFF"><br><br>
+<hr align=center width=100% size=5 color="F2ECFF"><br><br>
 <div class="head">
 <font size=7>Students Times</font>
     </div><br>
