@@ -143,9 +143,50 @@ text-align: center;
     text-align: left;
   }
 }
+.back-to-top {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  border-radius: 100%;
+  background: #141c38;
+  padding: 0.5rem;
+  border: none;
+  cursor: pointer;
+  opacity: 100%;
+  transition: opacity 0.5s;
+}
+
+.back-to-top:hover {
+  opacity: 60%;
+}
+
+.hidden {
+  opacity: 0%;
+}
+
+.back-to-top-icon {
+  width: 1rem;
+  height: 1rem;
+  color: #7ac9f9;
+}
+
+.progress-bar {
+  height: 1rem;
+  background: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
 </style>
 </HEAD>
     <BODY bgcolor=white text=005EEE>
+        <div class="progress-bar">
+<button class="back-to-top hidden">
+  <svg xmlns="http://www.w3.org/2000/svg" class="back-to-top-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11l5-5m0 0l5 5m-5-5v12" />
+  </svg>
+</button>
+</div>
 <div class="topnav" id="myTopnav">
 <div class="topnav-right">
 <a class="active" href="https://divcoder7.github.io/"><i class="fa fa-fw fa-home"></i> Home</a>
