@@ -435,7 +435,19 @@ backToTopButton.addEventListener("click", goToTop);
                     <li>Students Times</li>
                     <li>Email Today - cool1techers@gmail.com</li>
                 </ul>
-		 <div class="form"><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe3zTFuGL1kWitH6dodxjw6ew6zEyoanJjeVWilpj6bzN5h2g/viewform?embedded=true" width="350" height="300" frameborder="1" marginheight="0" marginwidth="0">Loading…</iframe></div>
+		 
+<form action="https://api.web3forms.com/submit" method="POST">
+
+    <input type="hidden" name="access_key" value="53b1e476-8e05-4b95-8110-5c3396cefdd3">
+
+    <input type="text" name="name" required>
+    <input type="email" name="email" required>
+    <textarea name="message" required></textarea>
+    <input type="hidden" name="redirect" value="https://web3forms.com/success">
+
+    <button type="submit">Submit Form</button>
+
+</form>
             </div>
         </footer>
         <!--Footer Ends-->
