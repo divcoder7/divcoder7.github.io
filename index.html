@@ -236,6 +236,32 @@ transition: background 0.2s
                 width: 70px;
                 height: 70px;
             }
+            footer{
+    width:100%;
+    background-color: darkslategrey;
+    padding: 30px 0;
+    margin-top:60px;
+}
+            footer ul{
+    float:left;
+    width:48%;
+    margin:1%;
+}
+            footer ul h3{
+    font-size:30px;
+    color: azure;
+}
+
+            footer ul li{
+    list-style-type: none;
+    font-size:15px;
+    color: rgb(182, 224, 224);
+}
+            footer:after{
+    display:block;
+    content:"";
+    clear:both;
+}
 </style>
 </HEAD>
     <BODY bgcolor=white text=005EEE>
@@ -398,5 +424,21 @@ document.addEventListener("scroll", () => {
 backToTopButton.addEventListener("click", goToTop);
 
 </script>
-        </BODY>
-    </HTML>
+        <!--Footer Starts-->
+        <footer>
+         <div class="wrapper">
+                <ul>
+                    <h3>Get in Touch</h3>
+                    <li>Manny's Music Shop - Delhi, India</li>
+                    <li>Address: ABC Avenue, 123-321</li>
+                    <li>Call Today - +91 98765 432##</li>
+                </ul>
+            
+             <iframe width="560" height="315" src="https://www.youtube.com/embed/g0dxKaM02To" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             
+             
+            </div>
+        </footer>
+        <!--Footer Ends-->
+</BODY>
+</HTML>
