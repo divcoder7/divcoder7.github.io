@@ -90,9 +90,11 @@ div#home a {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-color: #6100c9;
+color: #A39EF8;
 }
-
+.topnav a.active{
+color: #30C388;
+}
 
 
 /* Hide the link that should open and close the topnav on small screens */
@@ -187,7 +189,7 @@ body.dark {
 	align-items: center;
 	justify-content: space-between;
 	position: relative;
-	height: 20px;
+	height: 18px;
 	width: 50px;
 	transform: scale(1.2);
 }
@@ -196,7 +198,7 @@ body.dark {
 	background-color: #fff;
 	border-radius: 50%;
 	position: absolute;
-	height: 21px;
+	height: 20px;
 	width: 21px;
 	transform: translateX(0px);
 	transition: transform 0.4s linear;
@@ -232,34 +234,13 @@ background-repeat: none;
     padding: 20px 0;
     margin-top:50px;
 }
-            footer ul{
-    float:left;
-    width:48%;
-    margin:1%;
+.apps{
+color: #8138F7;
 }
-            footer ul h3{
-    font-size:30px;
-    color: azure;
+.links td{ 
+color: #006300;
+: 13;
 }
-
-            footer ul li{
-    list-style-type: none;
-    font-size:15px;
-    color: rgb(182, 224, 224);
-}
-            footer:after{
-    display:block;
-    content:"";
-    clear:both;
-}
-	footer a{
-		text-decoration: none;
-		color: rgb(182, 224, 224);
-	}
-		footer a:link{
-		text-decoration: none;
-		color: rgb(182, 224, 224);
-	}
 </style>
 </HEAD>
     <BODY bgcolor=white text=005EEE>
@@ -329,14 +310,15 @@ function myFunction() {
 <center><FONT SIZE=6 COLOR=006aff FACE="Franklin Gothic Book">THIS WEBSITE IS SPECIFICALLY DESIGNED FOR THE HELP AND DEVELOPMENT OF THE STUDENTS.</FONT></center>
        <div id="home" class="div">
     <br><FONT COLOR=GREEN size=5>&nbsp;Must have apps:</FONT>
-    <UL TYPE=disc>
+    <div class="apps"><UL TYPE=disc>
     <li><a href="https://play.google.com/store/apps/details?id=com.microblink.photomath">Photomath</a>
     <li><a href="https://www.savethestudent.org/out/officelens">Office lens</a>
    <li><a href="https://sts.ac/3e5r7Hs">Microsoft office</a>
   <li><a href="https://play.google.com/store/apps/details?id=com.mobisystems.msdict.embedded.wireless.oxford.dictionaryofenglish&hl=en_IN">English dictionary</a>
   <li><a href="https://play.google.com/store/apps/details?id=com.canva.editor">Canva</a>
-        </UL>
-        <font size=6 color=A166FF><br><br><center>Important links:</center></font>
+        </UL></div>
+        <caption><font size=6 color=A166FF><br><br><center>Important links:</center></font></caption>
+                <div class="links">
    <table border=2 bgcolor=orange align=center bordercolor=green height="25%" width="25%" cellpadding=8>
         <tr align=center>
             <font size=5 color=A166FF><td><a href="https://www.naturalreaders.com/">Text Reader</a></td></font>
@@ -353,31 +335,33 @@ function myFunction() {
         <tr align=center>
                     <font size=5 color=A166FF><td><a href="https://www.w3schools.com/">Online Web Tutorials</a></td></font>
         </tr>         
-            </table><br>
+            </table></div><br><br>
         
         <font size=6 color=green>&nbsp;Time Saving Shortcuts(Windows):</font><br><br>
-        <font size=4><p><kbd>Win key</kbd> + <kbd>V</kbd> to open clipboard.</p></font>
-        <font size=4><p><kbd>Ctrl</kbd> + <kbd>A</kbd> to select all.</p></font>
-        <font size=4><p><kbd>Ctrl</kbd> + <kbd>Z</kbd> to undo.</p></font>
-        <font size=4><p><kbd>Ctrl</kbd> + <kbd>Y</kbd> to redo.</p></font>
-        <font size=4><p><kbd>Ctrl</kbd> + <kbd>X</kbd> to cut selected items to clipboard.</p></font>
-        <font size=4><p><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Esc</kbd> to open task manager.</p></font>
-        <font size=4><p><kbd>Win</kbd> + <kbd>X</kbd> to open the hidden menu.</p></font>
-        <font size=4><p><kbd>Win</kbd> + <kbd>Prtscn</kbd> to take a screenshot.</p></font>
-        <font size=4><p><kbd>Win</kbd> + <kbd>I</kbd> to open settings.</p></font>
-        <font size=4><p><kbd>Alt</kbd> + <kbd>F4</kbd> to close app.</p></font>
-        <font size=4><p><kbd>F5</kbd> to refresh.</p></font>
+
+        <font size=4 color=36AAFF><p><kbd>Win key</kbd> + <kbd>V</kbd> to open clipboard.</p>
+        <p><kbd>Ctrl</kbd> + <kbd>A</kbd> to select all.</p>
+      <p><kbd>Ctrl</kbd> + <kbd>Z</kbd> to undo.</p>
+        <p><kbd>Ctrl</kbd> + <kbd>Y</kbd> to redo.</p>
+       <p><kbd>Ctrl</kbd> + <kbd>X</kbd> to cut selected items to clipboard.</p>
+     <p><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Esc</kbd> to open task manager.</p>
+       <p><kbd>Win</kbd> + <kbd>X</kbd> to open the hidden menu.</p>
+    <p><kbd>Win</kbd> + <kbd>Prtscn</kbd> to take a screenshot.</p>
+        <p><kbd>Win</kbd> + <kbd>I</kbd> to open settings.</p>
+      <p><kbd>Alt</kbd> + <kbd>F4</kbd> to close app.</p>
+     <p><kbd>F5</kbd> to refresh.</p></font>
+
         
-       <font size=6 color=A166FF><br><br><center>School E-Books:</center></font>
-       <font size=5 color=A98600><TABLE align="center" bgcolor=darkred width=25% height=30% cellpadding=8>
+       <font size=6 color=A166FF><br><center>School E-Books:</center></font><div class="links">
+       <font size=5 color=A98600><TABLE align="center" bgcolor=darkred width=25% height=30% cellpadding=8 >
     <tr>
         <font size=4 color=A98600><td bgcolor=orange align="center"><a href ="http://davpatiala.com/D51D65FF-E9B7-40F3-A804-7CBAEB501010/CMS/Page/E-Books">DAV BOOKS</a></td>
             </tr></font>
     <tr>
         <font size=4 color=A98600><td bgcolor=orange align="center"><a href ="https://ncert.nic.in/textbook.php">NCERT BOOKS</a></td>
             </tr></font>
-           </TABLE></font></div>
-<br>
+           </TABLE></font></div></div>
+<br><br><br>
     <b>&ensp;<iframe width="350" height="215" src="https://www.youtube.com/embed/_Gg3tFh70X0" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
        <br><font size="5" color="4C5AA3">&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;HTML Basics</font><br><br>
     &ensp;<iframe width="350" height="215" border=1 src="https://www.youtube.com/embed/AiU0OprFV8s" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
