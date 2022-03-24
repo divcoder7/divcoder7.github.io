@@ -20,9 +20,7 @@
 </script>
 <style>                            
 @import url('https://fonts.googleapis.com/css2?family=Sora');
-content{ 
-  font-family: 'Sora', sans-serif;
-} 
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@500&display=swap');
 td{ 
   font-family: 'Sora', sans-serif;
 } 
@@ -202,13 +200,13 @@ body.dark {
 	border-radius: 50%;
 	position: absolute;
 	height: 20px;
-	width: 21px;
+	width: 20px;
 	transform: translateX(0px);
-	transition: transform 0.4s linear;
+	transition: transform 0.5s linear;
 }
 
 .checkbox:checked + .label .ball {
-	transform: translateX(28px);
+	transform: translateX(29px);
 }
 
 
@@ -249,7 +247,7 @@ color: #006300;
 	box-sizing: border-box;
 	width: 100%;
 	text-align: left;
-	font: bold 16px ;
+	font: bold 16px 'IBM Plex Sans Arabic', sans-serif;
 	padding: 35px 30px;
 }
 
@@ -264,6 +262,7 @@ color: #006300;
 
 .footer-distributed .footer-left{
 	width: 40%;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
 }
 
 /* The company logo */
@@ -338,7 +337,7 @@ color: #006300;
 }
 
 .footer-distributed .footer-center p a{
-	color:  #1176CE;
+	color:  #00ADEE;
 	text-decoration: none;
 }
 
@@ -375,8 +374,8 @@ color: #006300;
 
 .footer-distributed .footer-company-about span{
 	display: block;
-    font-family: garamond;
-color: white;
+    font-family: 'IBM Plex Sans Arabic';
+    color: white;
 	color:  #ffffff;
 	font-size: 25px;
 	font-weight: bold;
@@ -404,16 +403,16 @@ color: white;
 	margin-bottom: 5px;
 }
 .facebook a:hover{
-	background-color: #3B5998;
+	background-color: #3b5998;
 }
 .twitter a:hover{
-	background-color: #4099FF;
+	background-color: #1DA1F2;
 }
 .linkedin a:hover{
-	background-color: 0274B3;
+	background-color: #0077b5;
 }
 .github a:hover{
-	background-color: black;
+	background-color: #171515;
 }
 .short{
 font-family: Impact;
@@ -474,11 +473,11 @@ font-size: 25px;
 }
 p.star a{
 font-size: 20px;
-color: #00A7FF;
+color: black;
 text-decoration: none;
 }
 p.star a:hover{
-color: azure;
+color: #882BC9;
 text-decoration: none;
 }
 </style>
@@ -498,7 +497,7 @@ text-decoration: none;
 <a href="https://www.youtube.com/channel/UCgmHRP1-7BR5pLsJYVONdEQ"><i class="fa fa-fw fa-video"></i> Videos</a>
 <a href="index3.html"><i class="fa-solid fa-circle-question"></i> Quizzes</a>
 <a href="index2.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
-
+<a href="index1.html"><i class="fa fa-fw fa-address-card"></i> About Us </a>
 	<a><input type="checkbox" class="checkbox" id="chk">
 	<label class="label" for="chk">
 		<i class="fas fa-moon"></i>
@@ -649,20 +648,23 @@ backToTopButton.addEventListener("click", goToTop);
 				<h3>Students<span class="short">times</span></h3>
 
 				<p class="footer-links">
-					<a href="index1.html" class="link-1"><i class="fa fa-fw fa-address-card"></i> About Us </a>
+                <a class="link-1" href="https://divcoder7.github.io/"><i class="fa fa-fw fa-home"></i> Home</a>
+<a href="https://www.youtube.com/channel/UCgmHRP1-7BR5pLsJYVONdEQ"><i class="fa fa-fw fa-video"></i> Videos</a>
+<a href="index3.html"><i class="fa-solid fa-circle-question"></i> Quizzes</a>
+					<a href="index1.html"><i class="fa fa-fw fa-address-card"></i> About Us </a>
                     <a href="index2.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
 				</p><br>
 					<!-- AddToAny BEGIN -->
-                    <p class="footer-like"><span>Like Our Work</span><br><br>
+                    <p class="footer-like"><span><b>Like Our Work</b></span><br><br>
 <a class="a2a_dd" href="https://www.addtoany.com/share"><i class="fa-solid fa-share-from-square"></i> Share it!</a>
 <script async src="https://static.addtoany.com/menu/page.js"></script>
 <!-- AddToAny END --><br><br>
-<p class="star">Star Us On <a href="https://github.com/divcoder7/divcoder7.github.io"><i class="fa fa-github"></i> Github</a></p></p><br>
+<p class="star">Star Us On <button><a href="https://github.com/divcoder7/divcoder7.github.io"><i class="fa fa-github"></i> <b>Github</b></a></button></p></p><br>
 				<p class="footer-company-name">Designed by Divyansh and Mishita Mathur.</p>
 			</div>
 
 			<div class="footer-center">
-<h1 class="delhi">Contact Us</h1>
+<h1 class="delhi"><b>Contact Us</b></h1>
 				<div>
 					<i class="fa fa-map-marker"></i>
 					<p class="us"> Delhi, India</p>
@@ -671,12 +673,12 @@ backToTopButton.addEventListener("click", goToTop);
 				<div>
 					<i class="fa fa-envelope"></i>
 					<p class="us"><a href="mailto:cool1techers@gmail.com">cool1techers@gmail.com</a></p><br>
-					<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe3zTFuGL1kWitH6dodxjw6ew6zEyoanJjeVWilpj6bzN5h2g/viewform?embedded=true" width="300" height="290" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+					<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe3zTFuGL1kWitH6dodxjw6ew6zEyoanJjeVWilpj6bzN5h2g/viewform?embedded=true" width="315" height="290" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 				</div>
 			</div>
 		<div class="footer-right">
 				<p class="footer-company-about">
-					<span>About the project</span>
+					<span><b>About the project</b></span>
 					We are a group of 2 students creating online resources for students.
 				</p>
                 
